@@ -1,0 +1,30 @@
+#!/bin/sh
+set -eu
+export MACAQUESTEP_SESSION=1
+export XDG_CURRENT_DESKTOP=MacaqueSTEP:Openbox
+export XDG_SESSION_DESKTOP=macaquestep
+if [ -z "${DBUS_SESSION_BUS_ADDRESS:-}" ]; then exec dbus-run-session -- "$0" "$@"; fi
+mkdir -p "${XDG_STATE_HOME:-$HOME/.local/state}/macaquestep"
+log="${XDG_STATE_HOME:-$HOME/.local/state}/macaquestep/session.log"
+exec >>"$log" 2>&1
+pids=''
+cleanup() { for pid in $pids; do kill "$pid" 2>/dev/null || true; done; }
+trap cleanup EXIT HUP INT TERM
+openbox & pids="$pids $!"
+lxpolkit & pids="$pids $!"
+nm-applet & pids="$pids $!"
+light-locker --lock-on-suspend & pids="$pids $!"
+# Wait briefly for the window manager to own the display before going fullscreen.
+n=0
+while [ "$n" -lt 30 ]; do
+ if xprop -root _NET_SUPPORTING_WM_CHECK 2>/dev/null | grep -q 'window id'; then break; fi
+ n=$((n+1)); sleep 0.1
+done
+# Welcome is gated by the installed-system marker and a per-install first-login receipt.
+# A failed animation must never block access to the desktop.
+/usr/bin/python3 /usr/share/macaquestep-preview/first_welcome.py || true
+# Exit means logout, not an automatic restart loop.
+if ! /usr/bin/macaquestep-preview --fullscreen; then
+ xmessage -center 'MacaqueSTEP did not start. Select Openbox at login for recovery. Session log: ~/.local/state/macaquestep/session.log' || true
+ exit 1
+fi

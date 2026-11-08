@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+ <vendor>MacaqueSTEP — Made by Drew</vendor>
+ <action id="org.macaquestep.install">
+  <description>Install MacaqueSTEP from live media</description>
+  <message>Authentication is required to start the MacaqueSTEP disk installer</message>
+  <defaults><allow_any>no</allow_any><allow_inactive>no</allow_inactive><allow_active>auth_admin</allow_active></defaults>
+  <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/macaquestep/installer-root</annotate>
+  <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+ </action>
+</policyconfig>

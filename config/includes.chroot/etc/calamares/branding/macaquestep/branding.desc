@@ -1,0 +1,33 @@
+---
+componentName: macaquestep
+welcomeStyleCalamares: true
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 900px,640px
+windowPlacement: center
+strings:
+  productName: MacaqueSTEP
+  shortProductName: MacaqueSTEP
+  version: "0.23 Experimental"
+  shortVersion: "0.23"
+  versionedName: MacaqueSTEP 0.23 — Made by Drew
+  shortVersionedName: MacaqueSTEP 0.23
+  bootloaderEntryName: MacaqueSTEP
+  productUrl: https://www.debian.org/
+  supportUrl: https://www.debian.org/support
+  knownIssuesUrl: https://www.debian.org/releases/trixie/releasenotes
+  releaseNotesUrl: https://www.debian.org/releases/trixie/releasenotes
+sidebar: widget
+navigation: widget
+images:
+  productLogo: monkey.svg
+  productIcon: monkey.svg
+  productWelcome: monkey.svg
+style:
+  SidebarBackground: "#30363e"
+  SidebarText: "#ffffff"
+  SidebarTextCurrent: "#ffffff"
+  SidebarBackgroundCurrent: "#277e79"
+
+# Required by Calamares 3.3; display our bundled artwork during installation.
+slideshow: ["monkey.svg"]

@@ -1,0 +1,7 @@
+---
+type: job
+name: macaquestep-cleanup
+interface: python
+script: main.py
+requiredModules: [mount, unpackfs, users]
+weight: 1

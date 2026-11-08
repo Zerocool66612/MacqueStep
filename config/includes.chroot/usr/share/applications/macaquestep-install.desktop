@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Install MacaqueSTEP
+Comment=Install the live system to disk using Calamares
+Exec=/usr/bin/macaquestep-install
+TryExec=/usr/bin/macaquestep-install
+Icon=macaquestep-preview
+Terminal=false
+Categories=System;

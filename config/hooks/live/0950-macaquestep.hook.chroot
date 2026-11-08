@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+python3 /usr/share/macaquestep/configure-calamares.py /
+systemctl enable lightdm NetworkManager
+# Build-time import check fails the build before a broken desktop is shipped.
+QT_QPA_PLATFORM=offscreen /usr/bin/python3 -c 'from PySide6 import QtWidgets,QtMultimedia,QtMultimediaWidgets,QtSvg,QtPrintSupport; import pyte'

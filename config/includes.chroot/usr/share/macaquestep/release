@@ -1,0 +1,7 @@
+MacaqueSTEP 0.22 experimental OS integration
+Made by Drew
+Base: Debian GNU/Linux 13 (trixie)
+Desktop application: MacaqueSTEP 0.22
+Display session: X11 / Openbox
+Status: build kit; ISO boot and disk installation require VM validation
+UNIX certification: none; POSIX/SUS conformance not established

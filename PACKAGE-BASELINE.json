@@ -1,0 +1,427 @@
+{
+  "note": "Repository metadata snapshot for package-name validation; versions are not locked by the builder. APT verifies signatures and dependencies during the actual build.",
+  "distribution": "trixie",
+  "architecture": "amd64",
+  "packages": {
+    "linux-image-amd64": {
+      "Version": "6.12.107-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/linux-signed-amd64/linux-image-amd64_6.12.107-1_amd64.deb",
+      "SHA256": "85d3ddb7095c6b339530ca2c8cfd8fc6c64dce67c6d1dc4bafbaa1ce7d748104"
+    },
+    "live-boot": {
+      "Version": "1:20250815~deb13u1",
+      "Architecture": "all",
+      "Filename": "pool/main/l/live-boot/live-boot_20250815~deb13u1_all.deb",
+      "SHA256": "9a2a1050345f783c31f980c54d15ee7ba66168394189a347f28e8f3d1bb58f41"
+    },
+    "live-config": {
+      "Version": "11.0.5",
+      "Architecture": "all",
+      "Filename": "pool/main/l/live-config/live-config_11.0.5_all.deb",
+      "SHA256": "2fba42fd76b60455714f23cfdd2998fcc632de9dd4c3d16f81b5e31855004304"
+    },
+    "live-config-systemd": {
+      "Version": "11.0.5",
+      "Architecture": "all",
+      "Filename": "pool/main/l/live-config/live-config-systemd_11.0.5_all.deb",
+      "SHA256": "74b877b96b3777cbe888ad051e4873d71e9044e26c221e6786343561a535cae7"
+    },
+    "live-tools": {
+      "Version": "1:20240525",
+      "Architecture": "all",
+      "Filename": "pool/main/l/live-tools/live-tools_20240525_all.deb",
+      "SHA256": "a73ade93655365ee30669ed80e565b927f016ef3935e99df9a2acfa770fa4c60"
+    },
+    "systemd-sysv": {
+      "Version": "257.13-1~deb13u1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/s/systemd/systemd-sysv_257.13-1~deb13u1_amd64.deb",
+      "SHA256": "3bed48042b6e40f8a3c439e79b4a4ed6a12102eb3ab66123dc43aa18f0416729"
+    },
+    "xorg": {
+      "Version": "1:7.7+24+deb13u1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/x/xorg/xorg_7.7+24+deb13u1_amd64.deb",
+      "SHA256": "c957a671eba3dd7800b10f03ee6c849a8aa0db143cc9aa2bd2e51c85fdbe337e"
+    },
+    "xserver-xorg-video-all": {
+      "Version": "1:7.7+24+deb13u1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/x/xorg/xserver-xorg-video-all_7.7+24+deb13u1_amd64.deb",
+      "SHA256": "a3dc5a517ff4bf7a7341c84ea10409be4640d80ae141de389b9f2c75f06197ae"
+    },
+    "lightdm": {
+      "Version": "1.32.0-6+b2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/lightdm/lightdm_1.32.0-6+b2_amd64.deb",
+      "SHA256": "a812e9897f78de52569a2d1a1ba46599af0f1483fa0a77b2ac8b7f2b4a3890a9"
+    },
+    "lightdm-gtk-greeter": {
+      "Version": "2.0.9-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/lightdm-gtk-greeter/lightdm-gtk-greeter_2.0.9-1_amd64.deb",
+      "SHA256": "41a32218994406cbc74969d54d4ced7fb5701422d8943df7c6d0cb960b7867a4"
+    },
+    "openbox": {
+      "Version": "3.6.1-12+b2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/o/openbox/openbox_3.6.1-12+b2_amd64.deb",
+      "SHA256": "2250f7758694066d67b622b9612e942a9c0a06edb92c72bb948928320f891853"
+    },
+    "lxpolkit": {
+      "Version": "0.5.6-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/lxsession/lxpolkit_0.5.6-2_amd64.deb",
+      "SHA256": "e6ef8ff40ea9a566f724a233cf345bc51692a1f8fe3359ffbc82101fe5d376f0"
+    },
+    "dbus-x11": {
+      "Version": "1.16.2-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/d/dbus/dbus-x11_1.16.2-2_amd64.deb",
+      "SHA256": "7d06cc4b3f0c9e4761cdd64772cd86a845b11ab1fcd073caaf4c34b459dc7cd3"
+    },
+    "network-manager": {
+      "Version": "1.52.1-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/n/network-manager/network-manager_1.52.1-1_amd64.deb",
+      "SHA256": "1e1f7aab8916b1346d39c844688409184a589a9e7f8377f9932ad95ebb7aafea"
+    },
+    "network-manager-gnome": {
+      "Version": "1.36.0-3+b1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/n/network-manager-applet/network-manager-gnome_1.36.0-3+b1_amd64.deb",
+      "SHA256": "46af18ac4223e55dfe0c8c3324eb9d671c1e0286d93e93af902437e69e32a2aa"
+    },
+    "wpasupplicant": {
+      "Version": "2:2.10-24",
+      "Architecture": "amd64",
+      "Filename": "pool/main/w/wpa/wpasupplicant_2.10-24_amd64.deb",
+      "SHA256": "99f50410baddebd421497703ad9b6d0e05deb3dfda99a96b2814f630d9b84498"
+    },
+    "wireless-regdb": {
+      "Version": "2026.05.30-1~deb13u1",
+      "Architecture": "all",
+      "Filename": "pool/main/w/wireless-regdb/wireless-regdb_2026.05.30-1~deb13u1_all.deb",
+      "SHA256": "72048ee2f369a8c2df8b5f99f79489d3812d869282038cfe55e23a4748231399"
+    },
+    "firmware-linux": {
+      "Version": "20250410-2",
+      "Architecture": "all",
+      "Filename": "pool/non-free-firmware/f/firmware-nonfree/firmware-linux_20250410-2_all.deb",
+      "SHA256": "e30f10ec4b3c3351755bd9e19752050413260aa0f431d625e879e65efd252408"
+    },
+    "firmware-iwlwifi": {
+      "Version": "20250410-2",
+      "Architecture": "all",
+      "Filename": "pool/non-free-firmware/f/firmware-nonfree/firmware-iwlwifi_20250410-2_all.deb",
+      "SHA256": "ec0e18c0214abb1402b244c41e8f6769ffb3f4d75486536c007c5bef95f08cf5"
+    },
+    "firmware-realtek": {
+      "Version": "20250410-2",
+      "Architecture": "all",
+      "Filename": "pool/non-free-firmware/f/firmware-nonfree/firmware-realtek_20250410-2_all.deb",
+      "SHA256": "925755a9b0891c7dc39bbb73d28ab8f7193d37303b5022e8bc9d458b9b4aaa4e"
+    },
+    "firmware-atheros": {
+      "Version": "20250410-2",
+      "Architecture": "all",
+      "Filename": "pool/non-free-firmware/f/firmware-nonfree/firmware-atheros_20250410-2_all.deb",
+      "SHA256": "8387a45e9307052858185620ab30efebbf9660b072d6c8309673bf112e291f35"
+    },
+    "pipewire-audio": {
+      "Version": "1.4.2-1",
+      "Architecture": "all",
+      "Filename": "pool/main/p/pipewire/pipewire-audio_1.4.2-1_all.deb",
+      "SHA256": "a118a3b35bf8fa818612f74595640b96e1069af337987d79bca7ab5fdc534668"
+    },
+    "wireplumber": {
+      "Version": "0.5.8-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/w/wireplumber/wireplumber_0.5.8-2_amd64.deb",
+      "SHA256": "51ccbcec6479c292b10295136ede4f4514de019271c463fd89f66ab9ee428106"
+    },
+    "pavucontrol": {
+      "Version": "6.1-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pavucontrol/pavucontrol_6.1-1_amd64.deb",
+      "SHA256": "0f065d0d7037d7a99a5137d2352c59f3b0298ffaa603019c8d85a7354227d309"
+    },
+    "upower": {
+      "Version": "1.90.9-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/u/upower/upower_1.90.9-1_amd64.deb",
+      "SHA256": "0417b54999efcac640a797c1c78576253a0c847ba82df4cedca2add607c998ff"
+    },
+    "acpi": {
+      "Version": "1.8-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/a/acpi/acpi_1.8-1_amd64.deb",
+      "SHA256": "a1363baf3171ade234e1e42d9a058a437883a8359062e1ee6da14ebed01fc6d8"
+    },
+    "bluez": {
+      "Version": "5.82-1.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/bluez/bluez_5.82-1.1_amd64.deb",
+      "SHA256": "64a680d95abb11cf02f8170b2d57115dbdee4738a6163c2cf25021f546bce8ac"
+    },
+    "blueman": {
+      "Version": "2.4.4-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/blueman/blueman_2.4.4-1_amd64.deb",
+      "SHA256": "b6dcfb5b81d40a72fb9ecbc1af71d5537dc846970b7a5193245f645565f24bf2"
+    },
+    "firefox-esr": {
+      "Version": "140.15.0esr-1~deb13u1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/f/firefox-esr/firefox-esr_140.15.0esr-1~deb13u1_amd64.deb",
+      "SHA256": "6ecab8a1d17117b017f806b78efff670c111f34fa999cd12c63b41d99f7188eb"
+    },
+    "xterm": {
+      "Version": "398-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/x/xterm/xterm_398-1_amd64.deb",
+      "SHA256": "633a43579b5d5445472fb01f897c10b33976ea27f54384848415cb706e74d381"
+    },
+    "sudo": {
+      "Version": "1.9.16p2-3+deb13u2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/s/sudo/sudo_1.9.16p2-3+deb13u2_amd64.deb",
+      "SHA256": "4f926f8f0704575158a90135713977f98f7d50d185969d9a8a405cdce5e3e50c"
+    },
+    "pkexec": {
+      "Version": "126-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/policykit-1/pkexec_126-2_amd64.deb",
+      "SHA256": "04e7b9595d8e96ac6bd64b3f92cce00fdd3ae5546b3adf86d30b1b3b1b801314"
+    },
+    "x11-xserver-utils": {
+      "Version": "7.7+11",
+      "Architecture": "amd64",
+      "Filename": "pool/main/x/x11-xserver-utils/x11-xserver-utils_7.7+11_amd64.deb",
+      "SHA256": "71819f316a8f141e2e9b69d871720b854c07b86d79923200c7eafa306bffbd36"
+    },
+    "xdg-utils": {
+      "Version": "1.2.1-2",
+      "Architecture": "all",
+      "Filename": "pool/main/x/xdg-utils/xdg-utils_1.2.1-2_all.deb",
+      "SHA256": "01dd31db093f1e810824519200112ec3fd447ba0341f7213244525eaa289355e"
+    },
+    "fonts-dejavu": {
+      "Version": "2.37-8",
+      "Architecture": "all",
+      "Filename": "pool/main/f/fonts-dejavu/fonts-dejavu_2.37-8_all.deb",
+      "SHA256": "8ded26da5970ece659294d56d37ef17256b57092f1d65581c5d533aa43879844"
+    },
+    "locales": {
+      "Version": "2.41-12+deb13u4",
+      "Architecture": "all",
+      "Filename": "pool/main/g/glibc/locales_2.41-12+deb13u4_all.deb",
+      "SHA256": "ffc5578d5c2c30ca70d46113908f200a09ab6e5e9eda199463af3285dbbaae8c"
+    },
+    "keyboard-configuration": {
+      "Version": "1.242~deb13u1",
+      "Architecture": "all",
+      "Filename": "pool/main/c/console-setup/keyboard-configuration_1.242~deb13u1_all.deb",
+      "SHA256": "f8b614f910166a74db8b4fe1d28a1b464dc4f4f726ed60ed9cc321e9eff8fed1"
+    },
+    "console-setup": {
+      "Version": "1.242~deb13u1",
+      "Architecture": "all",
+      "Filename": "pool/main/c/console-setup/console-setup_1.242~deb13u1_all.deb",
+      "SHA256": "e9f845aad7fd38685922ca5659034524e23c435d6cb300779118857d4587bd89"
+    },
+    "calamares": {
+      "Version": "3.3.14-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/c/calamares/calamares_3.3.14-1_amd64.deb",
+      "SHA256": "8e124c35d726dca93d90880f8a7dc55e6fc5cf5efb7d8ad2234b86d9188af801"
+    },
+    "calamares-settings-debian": {
+      "Version": "13.0.13-1",
+      "Architecture": "all",
+      "Filename": "pool/main/c/calamares-settings-debian/calamares-settings-debian_13.0.13-1_all.deb",
+      "SHA256": "70e4b052609817c9cac65ea8e8cffe5b87666b58d65d731e686523c36cd227aa"
+    },
+    "python3": {
+      "Version": "3.13.5-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/python3-defaults/python3_3.13.5-1_amd64.deb",
+      "SHA256": "c1388174dc7140e6c19a6dd39f8a0dcb38a835cd66c65644e0dded43d5223cb0"
+    },
+    "python3-yaml": {
+      "Version": "6.0.2-1+b2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pyyaml/python3-yaml_6.0.2-1+b2_amd64.deb",
+      "SHA256": "0019c4e7848c83a0d6bcb78cca902b5cdb1714aa6370ba01955b1fed6f667056"
+    },
+    "python3-pyside6.qtwidgets": {
+      "Version": "6.8.2.1-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pyside6/python3-pyside6.qtwidgets_6.8.2.1-4_amd64.deb",
+      "SHA256": "29a5b706c8924c1373408ff0294aa95e94c4d69225df4d0a489c9ec828e6d2e8"
+    },
+    "python3-pyside6.qtmultimedia": {
+      "Version": "6.8.2.1-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pyside6/python3-pyside6.qtmultimedia_6.8.2.1-4_amd64.deb",
+      "SHA256": "cb0888a6c6f6f873a69f08edb7b27c3e3bc6d6cda5ecd127fc1130d1f5740376"
+    },
+    "python3-pyside6.qtmultimediawidgets": {
+      "Version": "6.8.2.1-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pyside6/python3-pyside6.qtmultimediawidgets_6.8.2.1-4_amd64.deb",
+      "SHA256": "0406ccbb5cd9f652f6b3f017536c10f3ef562a170f675a4d1fb178106ee37432"
+    },
+    "python3-pyside6.qtsvg": {
+      "Version": "6.8.2.1-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pyside6/python3-pyside6.qtsvg_6.8.2.1-4_amd64.deb",
+      "SHA256": "1f3b125d5cd86d4d60dff48c15736b20611fc3122ce631fac536bf99617840df"
+    },
+    "python3-pyside6.qtprintsupport": {
+      "Version": "6.8.2.1-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pyside6/python3-pyside6.qtprintsupport_6.8.2.1-4_amd64.deb",
+      "SHA256": "61406040f864e15d4ab5e708de1d523e14619765d417f573ac05dbbfa921d7c8"
+    },
+    "python3-pyte": {
+      "Version": "0.8.0-3",
+      "Architecture": "all",
+      "Filename": "pool/main/p/pyte/python3-pyte_0.8.0-3_all.deb",
+      "SHA256": "413ace4b7cdbde84b6bf898c23c1be5d5ae0cf8592799f372b236aebab2fb010"
+    },
+    "rsync": {
+      "Version": "3.4.1+ds1-5+deb13u4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/r/rsync/rsync_3.4.1+ds1-5+deb13u4_amd64.deb",
+      "SHA256": "8aa122f6ba8d2ff112c72bb9814ee096ee516f0213b36b98bbe79c83c92fb226"
+    },
+    "squashfs-tools": {
+      "Version": "1:4.6.1-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/s/squashfs-tools/squashfs-tools_4.6.1-1_amd64.deb",
+      "SHA256": "0e185122f5858132bbc709e26228ba28cf7f0c41f6ed26e3f55f518f2a53b59d"
+    },
+    "cryptsetup": {
+      "Version": "2:2.7.5-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/c/cryptsetup/cryptsetup_2.7.5-2_amd64.deb",
+      "SHA256": "916ff5b1336f67dbaf763039529c3a0e10d2b839ef11463cde13a405ba49bcd4"
+    },
+    "lvm2": {
+      "Version": "2.03.31-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/lvm2/lvm2_2.03.31-2_amd64.deb",
+      "SHA256": "a6a130eae69ec2ede92b2bf4bfab35208a5340c2c3e2dcb4453bf8fbf742d0a6"
+    },
+    "btrfs-progs": {
+      "Version": "6.14-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/btrfs-progs/btrfs-progs_6.14-1_amd64.deb",
+      "SHA256": "ae3ab86d467b8b765ea1ea3e264c11a07a6f8a73e6b3df665c787d45b9b3491f"
+    },
+    "dosfstools": {
+      "Version": "4.2-1.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/d/dosfstools/dosfstools_4.2-1.2_amd64.deb",
+      "SHA256": "628551496a02e80eee83054b9c696b06ba8177159bf0afe9a5b4ab2fb94b1b41"
+    },
+    "e2fsprogs": {
+      "Version": "1.47.2-3+b12",
+      "Architecture": "amd64",
+      "Filename": "pool/main/e/e2fsprogs/e2fsprogs_1.47.2-3+b12_amd64.deb",
+      "SHA256": "e9e638eb3e22b5f14d01ce0b28aa512a5a22fcc0e70d1c733444579b67ea236b"
+    },
+    "grub-pc-bin": {
+      "Version": "2.12-9+deb13u2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/grub2/grub-pc-bin_2.12-9+deb13u2_amd64.deb",
+      "SHA256": "ebeaa7a12f6a96127dec15d2a64a6d3d8278b9a8bc5531185d990e1c97a4728d"
+    },
+    "grub-efi-amd64-bin": {
+      "Version": "2.12-9+deb13u2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/grub2/grub-efi-amd64-bin_2.12-9+deb13u2_amd64.deb",
+      "SHA256": "d486d62c83aa197f83c1dd0560ffd96d91c896f4d58485164eb7e1623e7bfde2"
+    },
+    "efibootmgr": {
+      "Version": "18-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/e/efibootmgr/efibootmgr_18-2_amd64.deb",
+      "SHA256": "617327cab7f7d4457bbcbb5aef603f89d5bc408e487cb85b006939b8c70b0b09"
+    },
+    "os-prober": {
+      "Version": "1.83",
+      "Architecture": "amd64",
+      "Filename": "pool/main/o/os-prober/os-prober_1.83_amd64.deb",
+      "SHA256": "ef702a8645756a33adc630156c40982db7e93239a8d7983eded567d19f058dde"
+    },
+    "parted": {
+      "Version": "3.6-5",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/parted/parted_3.6-5_amd64.deb",
+      "SHA256": "fbb8429783a8dd065bf9c37e249acaa56cb7bb8a3ff5bb531ef0aac3e8945f2d"
+    },
+    "flatpak": {
+      "Version": "1.16.6-1~deb13u2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/f/flatpak/flatpak_1.16.6-1~deb13u2_amd64.deb",
+      "SHA256": "394685e73bb5c9ca59cdf630353f21f88290b4b3b26731a7dd1f2be5a2f87d0a"
+    },
+    "light-locker": {
+      "Version": "1.8.0-3+b1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/light-locker/light-locker_1.8.0-3+b1_amd64.deb",
+      "SHA256": "1116a168c6ed3488a7f5d83440f5d8ca03644beb644887685a20aae873b28d8b"
+    },
+    "xdg-desktop-portal": {
+      "Version": "1.20.3+ds-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/x/xdg-desktop-portal/xdg-desktop-portal_1.20.3+ds-1_amd64.deb",
+      "SHA256": "9dce4bf7ca1cc9afce6d48735a4a9897a27bcfd17791a05031eb73ac76788922"
+    },
+    "xdg-desktop-portal-gtk": {
+      "Version": "1.15.3-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/x/xdg-desktop-portal-gtk/xdg-desktop-portal-gtk_1.15.3-1_amd64.deb",
+      "SHA256": "84fdc449f05ffa0772e6eb4c6ccb348a353d2abd382dacc206ba3c5eee71f630"
+    },
+    "qml6-module-qtqml-workerscript": {
+      "Version": "6.8.2+dfsg-7",
+      "Architecture": "amd64",
+      "Filename": "pool/main/q/qt6-declarative/qml6-module-qtqml-workerscript_6.8.2+dfsg-7_amd64.deb",
+      "SHA256": "b823947c35ed7b722cd31cb6020cae7d05b4e97fd33be57848affb4907b4bfe9"
+    },
+    "qml6-module-qtquick": {
+      "Version": "6.8.2+dfsg-7",
+      "Architecture": "amd64",
+      "Filename": "pool/main/q/qt6-declarative/qml6-module-qtquick_6.8.2+dfsg-7_amd64.deb",
+      "SHA256": "356de12b32ca02f317fa7117a08ca6b6bd78005ff9de3b1c6703dbe8c4e9f24e"
+    },
+    "qml6-module-qtquick-controls": {
+      "Version": "6.8.2+dfsg-7",
+      "Architecture": "amd64",
+      "Filename": "pool/main/q/qt6-declarative/qml6-module-qtquick-controls_6.8.2+dfsg-7_amd64.deb",
+      "SHA256": "e6a2cb6f3354f5442f318cdc5821ac3ac3a529be23a74e072bdfd1ee45fdafe4"
+    },
+    "qml6-module-qtquick-layouts": {
+      "Version": "6.8.2+dfsg-7",
+      "Architecture": "amd64",
+      "Filename": "pool/main/q/qt6-declarative/qml6-module-qtquick-layouts_6.8.2+dfsg-7_amd64.deb",
+      "SHA256": "9e6e04deb39c379886586ffd02d442627f9743e619b453501d29f69fda3c59a6"
+    },
+    "qml6-module-qtquick-templates": {
+      "Version": "6.8.2+dfsg-7",
+      "Architecture": "amd64",
+      "Filename": "pool/main/q/qt6-declarative/qml6-module-qtquick-templates_6.8.2+dfsg-7_amd64.deb",
+      "SHA256": "93e12d44f28733db6e48df85accd87f1ad968582e3918f63c82290283fce0e66"
+    },
+    "qml6-module-qtquick-window": {
+      "Version": "6.8.2+dfsg-7",
+      "Architecture": "amd64",
+      "Filename": "pool/main/q/qt6-declarative/qml6-module-qtquick-window_6.8.2+dfsg-7_amd64.deb",
+      "SHA256": "1dc40b972c99bb09b014b0c39b2253154e82fd1c797ca883c0b7b65b91ad0c44"
+    }
+  }
+}

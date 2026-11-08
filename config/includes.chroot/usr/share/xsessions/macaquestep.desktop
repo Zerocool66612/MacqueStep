@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=MacaqueSTEP
+Comment=Made by Drew — Debian-based experimental desktop
+Exec=/usr/bin/macaquestep-session
+TryExec=/usr/bin/macaquestep-session
+Type=Application
+DesktopNames=MacaqueSTEP;Openbox;

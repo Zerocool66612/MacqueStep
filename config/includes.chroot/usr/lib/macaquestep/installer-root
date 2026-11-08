@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+"""Run Calamares from live media, preserving its exit status and live fstab."""
+import os,sys,subprocess,tempfile,fcntl,shutil
+from pathlib import Path
+import yaml
+
+def live_source():
+ if 'boot=live' not in Path('/proc/cmdline').read_text().split():raise RuntimeError('The disk installer can run only from live media.')
+ for base in (Path('/run/live/medium/live'),Path('/lib/live/mount/medium/live')):
+  p=base/'filesystem.squashfs'
+  if p.is_file():return p
+ raise RuntimeError('Live filesystem.squashfs was not found under /run/live/medium/live or /lib/live/mount/medium/live.')
+
+def run():
+ if os.geteuid()!=0:raise RuntimeError('Installer authorization did not grant root privileges.')
+ source=live_source();config=Path('/etc/calamares/settings.conf')
+ if not config.is_file() or not Path('/usr/bin/calamares').is_file():raise RuntimeError('Calamares or its configuration is missing.')
+ lock=open('/run/macaquestep-installer.lock','w')
+ try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+ except BlockingIOError:raise RuntimeError('Another MacaqueSTEP disk installer is already running.')
+ unpack=Path('/etc/calamares/modules/unpackfs.conf');data=yaml.safe_load(unpack.read_text());entries=data.get('unpack',[])
+ if len(entries)!=1 or entries[0].get('sourcefs')!='squashfs':raise RuntimeError('Unsupported live filesystem layout; refusing to guess what to install.')
+ entries[0]['source']=str(source);unpack.write_text(yaml.safe_dump(data,sort_keys=False))
+ print('MacaqueSTEP: live source '+str(source),flush=True)
+ fstab=Path('/etc/fstab');backup=None
+ try:
+  # Debian's live-build fstab workaround, with restoration even on launch failure.
+  if fstab.exists() or fstab.is_symlink():
+   fd,name=tempfile.mkstemp(prefix='macaquestep-live-fstab-',dir='/run');os.close(fd);backup=Path(name);backup.unlink();shutil.move(str(fstab),str(backup))
+  env=dict(os.environ);env['QT_QPA_PLATFORM']='xcb';env['QT_QUICK_BACKEND']='software';env['QT_AUTO_SCREEN_SCALE_FACTOR']='1'
+  print('MacaqueSTEP: starting Calamares with diagnostic logging.',flush=True)
+  code=subprocess.run(['/usr/bin/calamares','-D6'],env=env).returncode;print('Calamares returned: '+str(code),flush=True);return code
+ finally:
+  if backup and (backup.exists() or backup.is_symlink()):
+   if not (fstab.exists() or fstab.is_symlink()):shutil.move(str(backup),str(fstab))
+   else:print('A new live fstab exists; previous copy preserved at '+str(backup),file=sys.stderr,flush=True)
+  lock.close()
+if __name__=='__main__':
+ try:sys.exit(run())
+ except Exception as error:print('MacaqueSTEP installer: '+str(error),file=sys.stderr,flush=True);sys.exit(1)

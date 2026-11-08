@@ -1,0 +1,4 @@
+#!/bin/sh
+# Visible Installer Center; no detached root installer and no masked exit status.
+set -eu
+exec /usr/bin/python3 /usr/share/macaquestep-preview/installer_center.py
